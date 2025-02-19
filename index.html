@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Inicio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Dashboard de Gestión</h1>
+    </header>
+    <main>
+        <h2>Selecciona tu Rol</h2>
+        <select id="roleSelect">
+            <option value="">-- Selecciona un Rol --</option>
+            <option value="manager">Manager</option>
+            <option value="diseñador">Diseñador</option>
+        </select>
+        <button onclick="setRole()">Acceder</button>
+    </main>
+    <script src="roles.js"></script>
+</body>
+</html>
+

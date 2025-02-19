@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asignación de Tareas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Asignación de Tareas</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="vista-general.html">Vista General</a>
+            <a href="carga-trabajo.html">Carga de Trabajo</a>
+            <a href="alertas-incidencias.html">Alertas</a>
+        </nav>
+    </header>
+    <main>
+        <section class="filters">
+            <label>Diseñador:</label>
+            <select id="filterDesigner">
+                <option value="">Todos</option>
+                <option value="Ana">Ana</option>
+                <option value="Carlos">Carlos</option>
+            </select>
+            <button onclick="exportPDF()">Exportar PDF</button>
+            <button onclick="exportExcel()">Exportar Excel</button>
+        </section>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Diseñador</th>
+                    <th>Squad</th>
+                    <th>Tipo de Tarea</th>
+                    <th>Tiempo Estimado</th>
+                    <th>Tiempo Real</th>
+                </tr>
+            </thead>
+            <tbody id="taskTable"></tbody>
+        </table>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
